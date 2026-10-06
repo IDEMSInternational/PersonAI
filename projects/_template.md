@@ -21,6 +21,14 @@ status: draft
 ## Coverage dimensions
 <!-- The few dimensions that make situations differ for this product, e.g. role, digital confidence, connectivity, language. -->
 
+## Situations to cover
+<!-- List these before choosing personas. A situation is relevant if it changes what the product has to do, or whether it reaches, helps or loses someone. Include situations for all three groups. Then work out the fewest personas that would cover them all: the set below can be up to 50% bigger than that, but no more. -->
+| # | Situation | Group | Covered by |
+|---|---|---|---|
+| 1 | | building for now | |
+
+**Set size:** <n> personas; minimum needed: <m>.
+
 ## Persona map
 
 ### Building for now

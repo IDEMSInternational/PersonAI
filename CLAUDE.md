@@ -20,7 +20,7 @@ Owner: Michele Pancera (IDEMS International). Personas often come from IDEMS and
 |---|---|
 | `personas/` | Persona library: one file per persona, `firstname-lastname.md` |
 | `personas/_template.md` | Persona template. Always use it. |
-| `projects/` | One file per product: its description plus its persona map |
+| `projects/` | One file per product: its description, the situations to cover, and its persona map |
 | `projects/_template.md` | Project template |
 | `projects/_archive/` | Maps written under the earlier scope that don't fit the current one |
 | `evaluations/` | Results of testing a spec/build against its personas (secondary use; format not settled yet) |
@@ -45,19 +45,26 @@ The current rules. When and why each was made is in `decisions.md`.
 5. **Keep source material separate from invention.** Anything not taken from a source is marked `[draft]` or `[to confirm]`. Never present invented details as researched fact.
 6. **Coverage dimensions.** For each project, pick a few dimensions that make situations differ (e.g. role, digital confidence, connectivity, language, motivation, rural/urban). Use them to make each persona a distinct situation, and to spot gaps in the set.
 7. **Personas come after the product, and are mainly for communication** (scope change, 2026-10-06). They used to be meant for shaping the spec. Now the product is defined first, and the set shows the range of situations it serves. In practice:
-   - Each "building for now" persona stands for a distinct situation, given in one line in the project map. If two personas share a situation, one of them is probably redundant.
+   - Each "building for now" persona stands for a distinct situation, given in one line in the project map. If two personas share a situation, one of them is probably redundant (see decision 9).
    - The project map should make sense to someone outside the team who reads nothing else.
    - Testing stays, as a secondary use.
-8. **Personas rest on layers of evidence** (agreed in principle, 2026-10-06): research → categories (situation types) → personas (each with a category and a grounding level) → project map → validation with real people. The pipeline will need more input than a product description. Details are still open (see `decisions.md`), and the templates and workflow haven't changed yet, so keep using the workflow below until they do.
+8. **Personas rest on layers of evidence** (agreed in principle, 2026-10-06): research → categories (situation types) → personas (each with a category and a grounding level) → project map → validation with real people. The pipeline will need more input than a product description. Details are still open (see `decisions.md`), and the templates and workflow haven't changed for it yet, so keep using the workflow below until they do. The "Situations to cover" table (decision 9) is a first, per-project version of the categories layer. The README presents all five layers and which exist today, so keep it in step when they change.
+9. **Close to the smallest set that covers every relevant situation** (2026-10-06). A set represents every situation that matters for the product, with about as few personas as that takes. It doesn't have to be the strict minimum: up to 50% more is fine (if 6 personas could cover every situation, up to 9 is acceptable). In practice:
+   - **List the situations first, then pick people.** Write them in the project file's "Situations to cover" table. Working definition, to confirm: a situation is relevant if it changes what the product has to do, or whether it reaches, helps or loses someone.
+   - **Work out the minimum**: the fewest personas that would cover every situation. One persona can cover several situations when they plausibly come together in one life (e.g. Lindiwe: a grandmother raising her grandchildren, with poor eyesight, whose WiFi goes in power cuts).
+   - **Stay within 50% of the minimum.** Extra personas are fine when they make the set clearer or more believable, for example so that no one persona has to carry too many traits. Beyond 50%, cut: remove personas whose situations are all covered by others (they stay in the library).
+   - **Fill gaps by reusing first.** Before writing a new persona for a gap, check whether one already in the set, or in the library, can plausibly cover it.
+   - **All three groups.** Each "not yet" or "not for" persona shows a distinct reason, not one already shown.
+   - **No fixed target number.** The size of the set follows from the situations.
 
 ## Workflow: "create personas for <product>"
 
 1. **Input.** The product must already be defined. If it's unclear what the product *is* or *does*, ask: don't build personas around a guessed product. If `projects/<product>.md` doesn't exist, create it from the template using what Michele said. Other details (countries, languages, devices) can be marked assumptions.
 2. **Reuse first.** Check `personas/` for existing personas that fit before writing new ones.
-3. **Plan the set.** List the roles the product touches, the coverage dimensions, and the distinct situations they combine into. Propose people for all three scope groups, not just "building for". Usually that's around 5–10 personas in total.
+3. **Plan the set.** List the roles the product touches, the coverage dimensions, and the relevant situations they combine into, for all three scope groups. Then choose people so that every situation is covered, with no more than 50% above the minimum needed (decision 9).
 4. **Write new personas** from `personas/_template.md`. Make them specific, warm and plausible for the setting. Avoid stereotypes. Mark invented details. Use the persona's own pronouns.
-5. **Fill the project map** with the groups, a one-line situation and a reason for each placement, and the coverage gaps.
-6. **Report back briefly**: the set, the gaps, and what needs confirming with real people.
+5. **Fill the project map**: the "Situations to cover" table, the groups, a one-line situation and a reason for each placement, and the coverage gaps. Check that every situation has a persona, and that the set is within 50% of the minimum.
+6. **Report back briefly**: the set, its size against the minimum, the gaps, and what needs confirming with real people.
 
 ## Workflow (secondary): "test <spec/build> against the personas"
 
@@ -72,8 +79,8 @@ Write a file in `evaluations/` named `<project>-<yyyy-mm-dd>.md`. Go through eac
 
 ## Open questions
 
-- How do we know a persona, or a set, is good? There's no definition of quality and no review step yet: the only check is Michele reading them (raised 2026-10-06).
-
+- How do we know a persona, or a set, is good? There's no definition of quality and no review step yet: the only check is Michele reading them (raised 2026-10-06). Partial answer for a set: it covers every relevant situation, with no more than 50% above the minimum number of personas needed (decision 9).
+- What counts as a "relevant" situation (decision 9 uses a working definition).
 - No license chosen yet (e.g. MIT for code, CC-BY for content).
 - How a set is shown to people outside the team: one slide per persona like the original PLH slides, a one-page overview of the whole set, or both. The project map works for us, but isn't yet something to hand to a partner.
 - The 2020 PLH Digital decks cover caregivers, teens, a facilitator, an intermediary and data users (M&E, research). Still missing: a manager role, and people already considered "not building for now".

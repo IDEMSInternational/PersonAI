@@ -76,3 +76,29 @@ The 2020 PLH Digital persona decks and user stories in `sources/`, and personas 
 
 **Still open:**
 - Who can push. After the transfer Michele has push rights but not admin, so an IDEMS org owner has to give IDEMS members write access (base permission or a team) and, if wanted, make Michele an admin of the repo.
+
+## 2026-10-06: Close to the smallest set that covers every relevant situation
+**Status:** decided (Michele). `CLAUDE.md` decision 9.
+
+**Decision:** A persona set represents every relevant situation with about as few personas as that takes. It doesn't have to be the strict minimum: up to 50% more than the minimum is acceptable (if 6 personas could cover every situation, up to 9 is fine).
+
+**What changed:**
+- Workflow: list the relevant situations first, work out the fewest personas that would cover them all, then choose a set within 50% of that. The "around 5–10 personas" guideline is gone; the size follows from the situations.
+- One persona can cover several situations when they plausibly come together in one life. Extra personas are fine when they make the set clearer or more believable, for example so that no one persona has to carry too many traits.
+- Gaps are filled by reusing personas first, before writing new ones.
+- The rule applies to all three scope groups.
+- `projects/_template.md` has a new "Situations to cover" table, so anyone can check that every situation has a persona and how far the set is above the minimum.
+
+**Why:** not stated. It tightens the scope change's rule that two personas sharing a situation means one is probably redundant.
+
+**Still open:**
+- What counts as a "relevant" situation. Working definition: one that changes what the product has to do, or whether it reaches, helps or loses someone. To confirm.
+- The "Situations to cover" table is a light, per-project version of the categories layer in the evidence entry above. Whether they become the same thing is open.
+- The PLH Digital map hasn't been checked against this rule yet. It has 17 personas (10 building for now, 5 not yet, 2 not for) and no situations table.
+
+## 2026-10-06: The README presents the evidence layers
+**Status:** decided (Michele).
+
+**Decision:** The README makes it clear that PersonAI is built in layers (research, situations, personas, project map, validation), and says which layers exist today and which are planned.
+
+**Why:** Michele asked for the research layer, and the other layers, to be clear in the README.
