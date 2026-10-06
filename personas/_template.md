@@ -2,7 +2,7 @@
 id: firstname-lastname
 name: Firstname Lastname
 tagline: The <adjective> <place> <role>
-role: <their relationship to the systems we build, e.g. facilitator, caregiver, adolescent, programme manager>
+role: <their relationship to the product, e.g. facilitator, caregiver, adolescent, programme manager>
 context: <programme / organisation / setting>
 location: <region, country>
 source: <where this persona came from: workshop, interviews, existing persona deck…>
@@ -41,5 +41,5 @@ source: <where this persona came from: workshop, interviews, existing persona de
 <!-- What would make them stop using, trusting or recommending what we build. -->
 
 ## Test questions
-<!-- Concrete yes/no checks for a spec or a build. Each one should be answerable by looking at the system. -->
+<!-- Secondary use: concrete yes/no checks for testing a spec or a build. Each one should be answerable by looking at the product. -->
 - Can <name> …?
