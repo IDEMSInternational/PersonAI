@@ -24,6 +24,20 @@ At minimum: a description of the tech being developed. Optional extras include t
 | [`projects/`](projects/) | Inputs: descriptions of the tech/systems being developed |
 | [`evaluations/`](evaluations/) | Results of testing a project against its personas |
 
+Templates: [`personas/_template.md`](personas/_template.md) and [`projects/_template.md`](projects/_template.md).
+
+## Scope groups
+
+Personas are reusable across projects. Each project places them in one of three groups:
+
+- **Building for now**: the spec must serve them, and we test against them.
+- **Not building for, yet**: named on purpose, with why, and what would change that.
+- **Deliberately not for**: people the system shouldn't target, or could harm.
+
+## Using it
+
+Open this repo with Claude Code and ask, for example, *"create personas for &lt;system&gt;"* or *"test this spec against the personas"*. The process is described in [`CLAUDE.md`](CLAUDE.md).
+
 ## Status
 
-Early setup. The persona format, generation and evaluation process come next.
+Early setup: a draft persona template and a draft project template. The evaluation format comes next.
