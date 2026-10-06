@@ -5,6 +5,3 @@ __pycache__/
 *.pyc
 .venv/
 node_modules/
-
-# Raw source material (slides, decks, photos): never published
-sources/

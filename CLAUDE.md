@@ -21,7 +21,7 @@ Owner: Michele Pancera (IDEMS International). Personas often come from IDEMS and
 | `projects/` | One file per system: the input description plus its persona map |
 | `projects/_template.md` | Project template |
 | `evaluations/` | Results of testing a spec/build against its personas (format not settled yet) |
-| `sources/` | Raw source material (slides, decks, photos). **Git-ignored and never published.** |
+| `sources/` | Raw source material (slides, decks, photos). **Committed and public**, so only add material Michele has cleared. Includes the 2020 PLH Digital decks: 14 personas plus their user stories. |
 
 ## Decisions so far
 
@@ -55,12 +55,12 @@ Write a file in `evaluations/` named `<project>-<yyyy-mm-dd>.md`. Go through eac
 ## Rules
 
 - **The repo is public.** Don't commit or push persona content taken from real programmes, or any real photos or people, until Michele has confirmed it can be public. Raw material goes in `sources/`. When in doubt, ask before pushing.
+- **Cleared for public (2026-10-06):** the PLH material, i.e. the persona decks and user stories in `sources/` and personas derived from them.
 - Commit only when asked.
 
 ## Open questions
 
-- Can PLH personas (and others from the existing decks) be public? Until this is answered, `personas/vimbai-moyo.md` stays **uncommitted**.
 - No license chosen yet (e.g. MIT for code, CC-BY for content).
-- Need examples of other roles (caregiver, teen, manager) and of people already considered "not building for now".
+- The 2020 PLH Digital decks cover caregivers, teens, a facilitator, an intermediary and data users (M&E, research). Still missing: a manager role, and people already considered "not building for now".
 - Is the library mainly shared and reused, or generated fresh per system? Current default: a shared library, reuse first.
 - The evaluation format still needs designing.
