@@ -66,3 +66,13 @@ The 2020 PLH Digital persona decks and user stories in `sources/`, and personas 
 **Decision:** Log every decision in this file when it's made: the date, the decision, why, its status and what's still open. When a decision changes how Claude works, update `CLAUDE.md` too.
 
 **Why:** `CLAUDE.md` shows only the current rules, not when or why they changed.
+
+## 2026-10-06: Repo moved to the IDEMS International organization
+**Status:** decided (Michele).
+
+**Decision:** Transfer the repo from Michele's GitHub account to `IDEMSInternational/PersonAI`, so anyone at IDEMS can find it and contribute. It stays public. Old `MichelePancera/PersonAI` links redirect.
+
+**Why:** Michele wants everyone at IDEMS to have access.
+
+**Still open:**
+- Who can push. After the transfer Michele has push rights but not admin, so an IDEMS org owner has to give IDEMS members write access (base permission or a team) and, if wanted, make Michele an admin of the repo.

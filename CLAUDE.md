@@ -12,7 +12,7 @@ Personas don't decide what the product is. That comes first.
 
 The minimum input is **a description of the product**: what it is, what it does, and who it serves.
 
-Owner: Michele Pancera (IDEMS International). Personas often come from IDEMS and Parenting for Lifelong Health (PLH) work. The repo is **public** on GitHub: https://github.com/MichelePancera/PersonAI
+Owner: Michele Pancera (IDEMS International). Personas often come from IDEMS and Parenting for Lifelong Health (PLH) work. The repo is **public** on GitHub, in the IDEMS International organization: https://github.com/IDEMSInternational/PersonAI
 
 ## Layout
 
